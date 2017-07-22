@@ -3,6 +3,8 @@ import React from 'react';
 import data from './data_source';
 import Header from './components/header';
 import Footer from './components/footer';
+import ObjectRenderer from './components/object-renderer';
+
 
 export default class App extends React.Component {
   constructor() {
@@ -15,11 +17,29 @@ export default class App extends React.Component {
   }
 
   makeDocument() {
-    return (<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>);
+    let black_list = ['test0', 'headline'];
+    let document = Object.entries(this.state).map( (item, index, arr) => {
+      if (black_list.indexOf(item[0]) >= 0) {
+        return (
+          <div key={index}>&nbsp;</div>
+        );
+      }
+      return (
+        <div key={index}>
+          <h2 className="white black-text allcaps shrink text-center spread heavy">{item[0]}</h2>
+          <hr className="full-width thick black" />
+          <ObjectRenderer data={item[1]} />
+        </div>
+      );
+    });
+    return (
+      <div>
+        {document}
+      </div>
+    );
   }
 
   render() {
-    console.log('state', this.state);
     return (
       <div className="container-fluid strawberry">
         <Header headline={this.state.headline} />

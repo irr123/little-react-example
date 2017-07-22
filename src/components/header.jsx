@@ -8,8 +8,15 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div className="row">
-        <h1 className="flow-text allcaps center skew-right green-apple comic-sans-text heavy padding baffle-longer">{this.props.headline}</h1>
+      <div>
+        <div className="row">
+          <div className="col s2">
+            &nbsp;
+          </div>
+          <div className="col s10">
+            <h1 className="flow-text allcaps fittext skew-right white-text black comic-sans-text heavy padding baffle-longer">{this.props.headline}</h1>
+          </div>
+        </div>
       </div>
     );
   }
