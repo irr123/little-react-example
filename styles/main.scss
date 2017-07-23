@@ -21,9 +21,22 @@ ul.tags li {
     border: 0;
 }
 
+a {
+    color: inherit;
+}
+
+.little-menu {
+    margin: 0 2rem;
+    transform: translate(0, 6rem);
+}
+
 @media only screen and (max-width: 600px) {
     .container-fluid {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    .little-menu {
+        transform: none;
     }
 }

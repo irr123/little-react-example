@@ -24,7 +24,7 @@ function TrainingType() { return enumerate("None", "Informal", "Formal", "Extern
 function ConferencePotential() { return enumerate("Attending", "Speaking"); }
 function FOSS() { return enumerate("Closed", "SometimesOpen", "AlwaysOpen"); }
 
-let data = {
+let task_data = {
 
   "test0": [
     {test: 'test1', test01: 'test01', test02: false}, {test: 'test2'}, {test: 'test3'}, true, 'any-data-string'
@@ -141,4 +141,4 @@ let data = {
   }
 };
 
-export default data;
+export default task_data;

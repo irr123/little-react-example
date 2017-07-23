@@ -1,15 +1,23 @@
 import '../styles/index.scss';
 import React from 'react';
-import data from './data_source';
-import Header from './components/header';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import {
+  ResumePage,
+  TaskPage
+} from './components/page';
 import Footer from './components/footer';
-import CompositeRenderer from './components/composite-renderer';
+import Header from './components/header';
 
 
 export default class App extends React.Component {
+
   constructor() {
     super();
-    this.state = {};
+    this.state = { headline: null };
   }
 
   scrollToTop() {
@@ -22,38 +30,39 @@ export default class App extends React.Component {
     window.scrollTo(0, 100);
   }
 
-  componentWillMount() {
-    this.setState(data);
-    this.scrollToTop();
-  }
-
-  makeDocument() {
-    let black_list = ['headline'];
-    let document = Object.entries(this.state).map( (item, index, arr) => {
-      if (black_list.indexOf(item[0]) >= 0) {
-        return (<div key={index}>&nbsp;</div>);
-      }
-      return (
-        <section key={index}>
-          <h2 className="platinum border-solid-thick black-text allcaps shrink text-center spread heavy">{item[0]}</h2>
-          <CompositeRenderer data={item[1]} />
-        </section>
-      );
-    });
-    return (<div>{document}</div>);
+  setHeadLine(headline) {
+    if (this.state.headline !== headline) {
+      this.setState({ headline: headline });
+    }
   }
 
   render() {
     return (
-      <div className="container-fluid">
-        <Header headline={this.state.headline} />
-        <main className="platinum-text flow-text lucida-text">
-          <div>
-            {this.makeDocument()}
+      <Router>
+        <div className="container-fluid platinum-text flow-text lucida-text">
+          <Header data={this.state.headline} />
+          <div className="row">
+            <div className="col s12 m4 l3 no-padding">
+              <aside className="little-menu black brutal-border-dark">
+                <nav className="simple">
+                  <ul className="flow-text">
+                    <li><Link className="smaller spread red-text" to="/">About me</Link></li>
+                    <li><Link className="smaller spread red-text" to="/example">Example</Link></li>
+                  </ul>
+                </nav>
+              </aside>
+            </div>
+
+            <main className="col s12 m8 l9 no-padding">
+              <article>
+                <Route exact path="/" component={(props) => <ResumePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
+                <Route path="/example" component={(props) => <TaskPage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
+              </article>
+            </main>
           </div>
-        </main>
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
