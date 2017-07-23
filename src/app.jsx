@@ -8,8 +8,9 @@ import {
 } from 'react-router-dom';
 import {
   ResumePage,
-  TaskPage
-} from './components/page';
+  TaskPage,
+  ReadMePage
+} from './components/pages';
 import Footer from './components/footer';
 import Header from './components/header';
 
@@ -48,6 +49,7 @@ export default class App extends React.Component {
                 <nav className="simple">
                   <ul className="flow-text">
                     <li><Link className="smaller spread red-text" to="/">About me</Link></li>
+                    <li><Link className="smaller spread red-text" to="/readme">ReadMe</Link></li>
                     <li><Link className="smaller spread red-text" to="/example">Template example</Link></li>
                   </ul>
                 </nav>
@@ -58,6 +60,7 @@ export default class App extends React.Component {
               <article>
                 <Route exact path="/" component={(props) => <ResumePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
                 <Route path="/example" component={(props) => <TaskPage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
+                <Route path="/readme" component={(props) => <ReadMePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
               </article>
             </main>
           </div>

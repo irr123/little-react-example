@@ -1,7 +1,8 @@
 import React from 'react';
-import task_data from '../task_source';
-import resume_data from '../resume_source';
 import CompositeRenderer from './composite-renderer';
+import task_data from '../data_sources/task_source';
+import resume_data from '../data_sources/resume_source';
+import readme_data from '../data_sources/readme_source';
 
 
 export class ResumePage extends React.Component {
@@ -49,3 +50,11 @@ export class TaskPage extends ResumePage {
     this.setState(task_data);
   }
 }
+
+export class ReadMePage extends ResumePage {
+
+  componentWillMount() {
+    this.setState(readme_data);
+  }
+}
+
