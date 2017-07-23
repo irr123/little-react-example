@@ -34,10 +34,10 @@ export default class App extends React.Component {
         return (<div key={index}>&nbsp;</div>);
       }
       return (
-        <div key={index}>
+        <section key={index}>
           <h2 className="platinum border-solid-thick black-text allcaps shrink text-center spread heavy">{item[0]}</h2>
           <CompositeRenderer data={item[1]} />
-        </div>
+        </section>
       );
     });
     return (<div>{document}</div>);
