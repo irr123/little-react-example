@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export default class Header extends React.Component {
+
   static get defaultProps() {
     return { headline: 'No headline' };
   }

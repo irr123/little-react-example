@@ -1,6 +1,6 @@
 import React from 'react';
 import ObjectRenderer, { isObject } from './object-renderer';
-import EnumRenderer from './enum-renderer';
+import TextRenderer from './text-renderer';
 import ArrayRenderer from './array-renderer';
 
 
@@ -13,7 +13,7 @@ export default class CompositeRenderer extends React.Component {
     if (isObject(value)) {
       return (<ObjectRenderer data={value} />);
     }
-    return (<EnumRenderer data={value} />);
+    return (<TextRenderer data={value} />);
   }
 
   render() {

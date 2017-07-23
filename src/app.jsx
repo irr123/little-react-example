@@ -47,7 +47,7 @@ export default class App extends React.Component {
     return (
       <div className="container-fluid">
         <Header headline={this.state.headline} />
-        <main className="platinum-text flow-text courier-new-text">
+        <main className="platinum-text flow-text lucida-text">
           <div>
             {this.makeDocument()}
           </div>
