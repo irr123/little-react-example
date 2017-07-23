@@ -12,10 +12,10 @@ class ObjectItemRenderer extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col s6 m4 text-right spread heavy">
+        <div className="col s4 m3 text-right spread heavy">
           {this.props.name}&nbsp;:
         </div>
-        <div className="col s6 m8"><CompositeRenderer data={this.props.data} /></div>
+        <div className="col s8 m9"><CompositeRenderer data={this.props.data} /></div>
       </div>
     );
   }

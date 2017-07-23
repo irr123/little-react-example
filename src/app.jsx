@@ -42,18 +42,18 @@ export default class App extends React.Component {
         <div className="container-fluid platinum-text flow-text lucida-text">
           <Header data={this.state.headline} />
           <div className="row">
-            <div className="col s12 m4 l3 no-padding">
+            <div className="col s12 m3 l2 no-padding">
               <aside className="little-menu black brutal-border-dark">
                 <nav className="simple">
                   <ul className="flow-text">
                     <li><Link className="smaller spread red-text" to="/">About me</Link></li>
-                    <li><Link className="smaller spread red-text" to="/example">Example</Link></li>
+                    <li><Link className="smaller spread red-text" to="/example">Template example</Link></li>
                   </ul>
                 </nav>
               </aside>
             </div>
 
-            <main className="col s12 m8 l9 no-padding">
+            <main className="col s12 m9 l10 no-padding">
               <article>
                 <Route exact path="/" component={(props) => <ResumePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
                 <Route path="/example" component={(props) => <TaskPage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
