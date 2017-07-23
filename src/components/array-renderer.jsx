@@ -1,11 +1,20 @@
 import React from 'react';
+import ObjectRenderer, { isObject } from './object-renderer';
+import EnumRenderer from './enum-renderer';
+
 
 export class ArrayItemRenderer extends React.Component {
 
+  selectRepresenter(item) {
+    if (isObject(item)) {
+      return (<ObjectRenderer data={item} />);
+    }
+    return (<EnumRenderer data={item} />);
+  }
+
   render() {
-    return (
-      <li className="courier-new-text cherry-vanilla skew-right">{this.props.data}</li>
-    );
+    let ret = this.selectRepresenter(this.props.data);
+    return (<li className="courier-new-text cherry platinum-text">{ret}</li>);
   }
 }
 
@@ -27,7 +36,7 @@ export default class ArrayRenderer extends React.Component {
 
     return (
       <div className="row">
-        <ul className="padding tags white">
+        <ul className="black-text padding border-dotted-thick tags platinum">
           {this.state.data}
         </ul>
       </div>

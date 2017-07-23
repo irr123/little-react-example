@@ -27,7 +27,7 @@ function FOSS() { return enumerate("Closed", "SometimesOpen", "AlwaysOpen"); }
 let data = {
 
   "test0": [
-    {test: 'test1'}, {test: 'test2'}, {test: 'test3'},
+    {test: 'test1', test01: 'test01', test02: false}, {test: 'test2'}, {test: 'test3'}, true, 'any-data-string'
   ],
 
   "headline": "Javascript wizard with good sense of design",

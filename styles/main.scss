@@ -5,3 +5,21 @@
 .row {
     align-items: baseline;
 }
+
+ul.tags li {
+    margin: 0.4em 1em;
+}
+
+.github-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import ArrayRenderer from './array-renderer';
 import EnumRenderer from './enum-renderer';
 
-const isObject = (val) => {
+export const isObject = (val) => {
     if (val === null) { return false;}
     return ( (typeof val === 'function') || (typeof val === 'object') );
 };

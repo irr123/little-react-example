@@ -14,7 +14,7 @@ export default class Header extends React.Component {
             &nbsp;
           </div>
           <div className="col s10">
-            <h1 className="flow-text allcaps fittext skew-right white-text black comic-sans-text heavy padding baffle-longer">{this.props.headline}</h1>
+            <h1 className="flow-text allcaps fittext skew-right platinum-text black comic-sans-text heavy padding baffle-longer">{this.props.headline}</h1>
           </div>
         </div>
       </div>
