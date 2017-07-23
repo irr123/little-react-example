@@ -1,13 +1,13 @@
 /* BF 1.2 CORE CSS*/
 /* Load Default */
-@import './default';
+@import './default.css';
 /* Load Grid Core */
-@import './grids/core';
+@import './grids/core.css';
 /* Load Flavors */
-@import './flavors';
+@import './flavors.css';
 /* Load BUTCH */
-@import './butch';
+@import './butch.css';
 /* Load BUIX */
-@import './buix';
+@import './buix.css';
 /* Load BFX */
-@import './bfx';
+@import './bfx.css';

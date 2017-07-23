@@ -1,4 +1,4 @@
 /* Load Default Grid */
-@import './default-grid';
+@import './default-grid.css';
 /* Load Flexbox Grid */
-@import './flexboxgrid';
+@import './flexboxgrid.css';

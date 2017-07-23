@@ -45,7 +45,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid strawberry">
+      <div className="container-fluid">
         <Header headline={this.state.headline} />
         <main className="platinum-text flow-text courier-new-text">
           <div>

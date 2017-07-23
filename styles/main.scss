@@ -1,3 +1,7 @@
+html {
+    background-color: #FE2E2E;
+}
+
 .full-width {
     width: 100%;
 }
@@ -18,8 +22,8 @@ ul.tags li {
 }
 
 @media only screen and (max-width: 600px) {
-  .container-fluid {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+    .container-fluid {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }

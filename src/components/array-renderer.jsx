@@ -36,7 +36,7 @@ export default class ArrayRenderer extends React.Component {
 
     return (
       <div className="row">
-        <ul className="black-text padding border-dotted-thick tags platinum">
+        <ul className="black-text full-width padding border-dotted-thick tags platinum">
           {this.state.data}
         </ul>
       </div>
