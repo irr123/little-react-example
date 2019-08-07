@@ -1,7 +1,7 @@
 
 let resume_data = {
 
-  headline: "just another man somewhere in internet",
+  headline: "just another dude from the internet",
   "personal (simple)": {
     name: "Ivan",
     contact: "ivan@bogomolov.su",
@@ -39,7 +39,14 @@ let resume_data = {
         current: false,
         link: "myttk.ru",
         position: "engineer",
-        responsibility: "",
+        progress: {
+          achievements: [
+            "I found first serious job!",
+            "Networking is not so easy :'(",
+            "Communications must have",
+          ],
+          responsibility: ""
+        },
       }
     },
     Development: {
@@ -47,19 +54,45 @@ let resume_data = {
         current: false,
         link: "intel.com",
         position: "trainee",
-        responsibility: "",
+        progress: {
+          achievements: [
+            '"C" used in real life o_0',
+            "Metrics & Analytics is important",
+            "There are no unsolvable problems - this is all from a lack of knowledge"
+          ],
+          responsibility: ""
+        },
       },
       Tensor: {
         current: false,
         link: "tensor.ru",
         position: "fullstack web developer",
-        responsibility: "",
+        progress: {
+          achievements: [
+            "Not all offers are worth accepting"
+          ],
+          responsibility: ""
+        },
       },
       "ArelloMobile, Pushwoosh later": {
         current: true,
         link: ["www.arello-mobile.com", "www.pushwoosh.com"],
         position: "developer, tech lead later",
-        responsibility: "",
+        progress: {
+          achievements: [
+            {"Hard skills": [
+              "Software architecture",
+              "DevOps",
+            ]},
+            {"Soft skills": [
+              "Time evaluation",
+              "Risk assessment",
+              "Data driven decisions",
+            ]},
+            {"Incident management": "Resolving incidents and their consequences"},
+          ],
+          responsibility: ""
+        },
       }
     }
   },

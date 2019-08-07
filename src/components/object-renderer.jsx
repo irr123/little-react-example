@@ -13,7 +13,7 @@ class ObjectItemRenderer extends React.Component {
     return (
       <div className="row">
         <div className="col text-right black-text spread heavy no-padding">
-          {this.props.name}:&nbsp;
+          {this.props.name}:
         </div>
         <div className="col no-padding"><CompositeRenderer data={this.props.data} /></div>
       </div>
@@ -41,7 +41,7 @@ export default class ObjectRenderer extends React.Component {
   render() {
     return (
       <div className="row">
-        <ul className="padding square alert black-text border-dashed-thick">
+        <ul className="padding square strawberry-banana black-text border-dashed-thick">
           {this.state.data}
         </ul>
       </div>
