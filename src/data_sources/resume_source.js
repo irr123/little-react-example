@@ -2,53 +2,75 @@
 let resume_data = {
 
   headline: "just another man somewhere in internet",
-  personal: {
+  "personal (simple)": {
     name: "Ivan",
     contact: "ivan@bogomolov.su",
     location: "Russia, Novosibirsk"
   },
-  skills: [
+  "skills (array with nested objects)": [
     {
       language: "Python",
+      active: false,
       frameworks: ["Flask", "Django", "AsyncIO"],
-      experience: `${((new Date()).getYear() - (new Date('01.01.2013')).getYear())} years`,
+      experience: `${((new Date(2017,1,1)).getYear() - (new Date(2013,1,1)).getYear())}`,
     },
     {
       language: "JavaScript",
+      active: false,
       frameworks: ["Jquery", "Angular", "React"],
-      experience: `${((new Date()).getYear() - (new Date('01.01.2014')).getYear())} years`,
-    }
+      experience: `${((new Date(2017,1,1)).getYear() - (new Date(2014,1,1)).getYear())}`,
+    },
+    {
+      language: "PHP",
+      active: true,
+      frameworks: ["Native"],
+      experience: `${((new Date()).getYear() - (new Date(2017,1,1)).getYear())}`,
+    },
+    {
+      language: "Golang",
+      active: true,
+      frameworks: ["Native"],
+      experience: `${((new Date()).getYear() - (new Date(2017,1,1)).getYear())}`,
+    },
   ],
-  experience: {
+  "experience (multi-level nested objects)": {
     ISP: {
-      "Vita+, later TransTelecom": {
+      "Vita+, TransTelecom later": {
         current: false,
-        link: "http://myttk.ru",
-        position: "network engineer"
+        link: "myttk.ru",
+        position: "engineer",
+        responsibility: "",
       }
     },
     Development: {
       Intel: {
         current: false,
-        link: "http://intel.com",
-        position: "trainee"
+        link: "intel.com",
+        position: "trainee",
+        responsibility: "",
       },
       Tensor: {
         current: false,
-        link: "http://tensor.ru/",
-        position: "fullstack web developer"
+        link: "tensor.ru",
+        position: "fullstack web developer",
+        responsibility: "",
       },
-      ArelloMobile: {
+      "ArelloMobile, Pushwoosh later": {
         current: true,
-        link: "http://www.arello-mobile.com/",
-        position: "fullstack web developer"
+        link: ["www.arello-mobile.com", "www.pushwoosh.com"],
+        position: "developer, tech lead later",
+        responsibility: "",
       }
     }
   },
-  "Accessible projects in which I was participated": [
-    "https://software.intel.com/c-compilers/iss",
-    "https://sbis.ru/",
-    "https://github.com/Arello-Mobile"
+  "Accessible projects in which I was participated (real)": [
+    "software.intel.com/c-compilers/iss",
+    "sbis.ru/",
+    "github.com/Arello-Mobile",
+    "github.com/Pushwoosh",
+    {
+      conclusion: "Funny words",
+    },
   ]
 
 };

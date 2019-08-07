@@ -13,7 +13,7 @@ export class BooleanRenderer extends React.Component {
 
   render() {
     let ret = this.props.data ? 'Yep' : 'Nope';
-    let style = `${this.props.data ? 'pumpkin-spice' : 'pink'} platinum-text`;
+    let style = `${this.props.data ? 'pride-gradient' : 'disabled'}`;
     return (<span className={style}>{ret}</span>);
   }
 }
@@ -26,14 +26,14 @@ export class NumberRenderer extends React.Component {
 
   render() {
     let ret = this.formatNumber(this.props.data);
-    return (<span className="blood platinum-text">{ret}</span>);
+    return (<span className="blueberry white-text">{ret}</span>);
   }
 }
 
 export class DefaultRenderer extends React.Component {
 
   render() {
-    return (<span className="cherry platinum-text">{this.props.data}</span>);
+    return (<span className="chocolate-strawberry">{this.props.data}</span>);
   }
 }
 

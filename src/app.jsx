@@ -45,12 +45,11 @@ export default class App extends React.Component {
           <Header data={this.state.headline} />
           <div className="row">
             <div className="col s12 m3 l2 no-padding">
-              <aside className="little-menu black brutal-border-dark">
+              <aside className="little-menu black sketchbox">
                 <nav className="simple">
                   <ul className="flow-text">
-                    <li><Link className="smaller spread red-text" to="/">About me</Link></li>
-                    <li><Link className="smaller spread red-text" to="/readme">ReadMe</Link></li>
-                    <li><Link className="smaller spread red-text" to="/example">Template example</Link></li>
+                    <li><Link className="spread" to="/">About</Link></li>
+                    <li><Link className="spread" to="/readme">ReadMe</Link></li>
                   </ul>
                 </nav>
               </aside>

@@ -1,4 +1,7 @@
-/* Load Default Grid */
-@import './default-grid.css';
+/* Brutalist Framework 1.5 Grid Core */
+/* Load Default Grid (DEPRECATED) */
+@import url('default-grid.css');
 /* Load Flexbox Grid */
-@import './flexboxgrid.css';
+@import url('flexboxgrid.css');
+/* Load B3Grid (BETA) */
+@import url('b3grid.css');

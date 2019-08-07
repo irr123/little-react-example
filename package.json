@@ -1,6 +1,6 @@
 {
   "name": "brutal-resume",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Resume builder, based on BRUTAL design",
   "main": "''",
   "scripts": {

@@ -1,17 +1,25 @@
-html {
-    background-color: #FE2E2E;
+.row {
+    align-items: baseline;
+    margin: 0.5em 0;
 }
 
-.full-width {
+ul {
     width: 100%;
 }
 
-.row {
-    align-items: baseline;
+ul.tags li {
+    display: block;
+    margin: 0.4em 1em;
 }
 
-ul.tags li {
-    margin: 0.4em 1em;
+ul.simple-nav li, nav.simple li {
+    border-top: none;
+    border-bottom: none;
+}
+
+ul.simple-nav, nav.simple ul {
+    border-bottom: none;
+    border-top: none;
 }
 
 .github-logo {
@@ -26,7 +34,7 @@ a {
 }
 
 .little-menu {
-    margin: 0 2rem;
+    margin: 0 1rem;
     transform: translate(0, 6rem);
 }
 
@@ -39,4 +47,12 @@ a {
     .little-menu {
         transform: none;
     }
+}
+
+.heavy {
+    margin: 0.5em 0;
+}
+
+div .jagged {
+    margin: 2.5em 0 0 0;
 }

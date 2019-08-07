@@ -1,6 +1,5 @@
 import React from 'react';
 import CompositeRenderer from './composite-renderer';
-import task_data from '../data_sources/task_source';
 import resume_data from '../data_sources/resume_source';
 import readme_data from '../data_sources/readme_source';
 
@@ -26,10 +25,10 @@ export class ResumePage extends React.Component {
         return (<div key={index}>&nbsp;</div>);
       }
       return (
-        <article key={index}>
+        <section key={index}>
           <h2 className="platinum border-solid-thick black-text allcaps shrink text-center spread heavy">{item[0]}</h2>
           <CompositeRenderer data={item[1]} />
-        </article>
+        </section>
       );
     });
     return (<div>{document}</div>);
@@ -41,13 +40,6 @@ export class ResumePage extends React.Component {
         {this.makeDocument()}
       </div>
     );
-  }
-}
-
-export class TaskPage extends ResumePage {
-
-  componentWillMount() {
-    this.setState(task_data);
   }
 }
 
