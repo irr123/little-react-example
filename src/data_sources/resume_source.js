@@ -45,7 +45,7 @@ let resume_data = {
             "Communications must have",
             "Networking is not so easy 😢",
           ],
-          responsibility: "TransTelecom bought Vita with me. There I was started as a tech support position, and talk with cutomers about something with goal to solve they problems, it was not so bad, but is too trivial. I started automating all what I can and in the end grow to engineer position, in which I've done software for paying terminal, monitoring systems, network software auto-configuration system, wifi-authorizing system (it login users to public wifi over sms) and so on."
+          responsibility: "TransTelecom bought Vita with me. There I started at a tech support position, and talked with cutomers about something with goal to solve their problems, it was not so bad, but was too trivial. I started automating all I could and in the end grew to engineer position, in which I've created software for paying terminal, monitoring systems, network software auto-configuration system, wifi-authorizing system (it logins users to public wifi over sms) and so on."
         },
       }
     },
@@ -57,10 +57,10 @@ let resume_data = {
         progress: {
           achievements: [
             '"C" is used not only in university 😳',
-            "Metrics & Analytics is important",
+            "Metrics & Analytics are important",
             "There are no unsolvable problems - this is all from a lack of knowledge"
           ],
-          responsibility: "Part of summer I'm helping Intel engineers by writing utility which generates special C code, for testing and auto-benchmarking icc's optimization"
+          responsibility: "Part of summer I was helping Intel engineers by writing utility which generated special C code, for testing and auto-benchmarking icc's optimization"
         },
       },
       Tensor: {
@@ -71,7 +71,18 @@ let resume_data = {
           achievements: [
             "Not all offers are worth accepting"
           ],
-          responsibility: "These guys promise to me one things, but actually we all do opposite things which isn't interesting for me"
+          responsibility: "These guys promised me one thing, but actually we all did just the opposite thing which wasn't interesting for me"
+        },
+      },
+      GeekBrains: {
+        current: false,
+        link: "geekbrains.ru",
+        position: "lecturer",
+        progress: {
+          achievements: [
+            "None of the students were hurt 🌈"
+          ],
+          responsibility: "Gave a three-month advanced python course"
         },
       },
       "ArelloMobile, Pushwoosh later": {
@@ -91,7 +102,7 @@ let resume_data = {
             ]},
             {"Incident management": "Resolving incidents and their consequences"},
           ],
-          responsibility: "Arello was outsoursing company and there I solved very different things, it was a little web sites, medium web sites, one very big site with many components-microservices, WebGL and VR projects, except web development we done tracking and analytics systems, we had own documentation auto-generating toolkit, own CI solution over Jenkins + docker and many other interesting things. Time was gone and our SEO/owner decided that horisontal busines scaling not so effective as we can be and we switched to own product - Pushwoosh. At first it was an a hight load platform for deliver push-notification, but later we adopted another platforms and changed our direction to marketing communications platform with more emphasis to statiscics & analytics. Now we support 15+ communications channel, hard working on data lake, CDP and analog of SalesForce's Journey Builder."
+          responsibility: "Arello was an outsoursing company and there I solved very different projects, there were little web sites, medium web sites, one very big site with many components-microservices, WebGL and VR projects, in addition to web development we did tracking and analytics systems, we had own documentation auto-generating toolkit, own CI solution over Jenkins + docker and many other interesting things. Once upon a time our SEO/owner decided that horisontal business scaling was not as effective as we can be and we switched to own product - Pushwoosh. At first it was a hightload platform for delivering push-notification, but later we adopted another platforms and changed our direction to marketing communications platform with more emphasis to statiscics & analytics. Now we support 15+ communications channels, hard working on data lake, CDP and analogue of SalesForce's Journey Builder."
         },
       }
     }
@@ -106,7 +117,7 @@ let resume_data = {
         "I'm": {
           "interested in": [
             "Computer science",
-            "Hight load systems",
+            "Hightload and distributed systems",
             "Software architecture and design",
             {
               "management": {
@@ -115,7 +126,7 @@ let resume_data = {
               },
               "coding": {
                 "now": "good 😉",
-                "future": "needs to try to make own open source project, for example hight performance lock-free cache for golang or distributed storage like Netflix/dynomite but better 😈",
+                "future": "needs to try to make own open source project, for example high performance lock-free cache for golang or distributed storage like Netflix/dynomite but better 😈",
               }
             },
           ],

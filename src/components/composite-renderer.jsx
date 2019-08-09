@@ -1,5 +1,6 @@
 import React from 'react';
 import ObjectRenderer, { isObject } from './object-renderer';
+import PreformattedRenderer, { isFunction } from './fn-renderer';
 import TextRenderer from './text-renderer';
 import ArrayRenderer from './array-renderer';
 
@@ -12,6 +13,9 @@ export default class CompositeRenderer extends React.Component {
     }
     if (isObject(value)) {
       return (<ObjectRenderer data={value} />);
+    }
+    if (isFunction(value)) {
+      return (<PreformattedRenderer data={value} />);
     }
     return (<TextRenderer data={value} />);
   }

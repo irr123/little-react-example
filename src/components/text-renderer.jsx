@@ -30,7 +30,7 @@ export class NumberRenderer extends React.Component {
   }
 }
 
-export class DefaultRenderer extends React.Component {
+export class DefaultTextRenderer extends React.Component {
 
   render() {
     return (<span className="custom-padding chocolate-strawberry">{this.props.data}</span>);
@@ -46,7 +46,7 @@ export default class TextRenderer extends React.Component {
     if (isNumber(value)) {
       return (<NumberRenderer data={value} />);
     }
-    return (<DefaultRenderer data={value} />);
+    return (<DefaultTextRenderer data={value} />);
   }
 
   render() {
