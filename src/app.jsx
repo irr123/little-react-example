@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import {
   ResumePage,
-  TaskPage,
   ReadMePage
 } from './components/pages';
 import Footer from './components/footer';
@@ -58,7 +57,6 @@ export default class App extends React.Component {
             <main className="col s12 m9 l10 no-padding">
               <article>
                 <Route exact path="/" component={(props) => <ResumePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
-                <Route path="/example" component={(props) => <TaskPage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
                 <Route path="/readme" component={(props) => <ReadMePage {...props} headlineCallBack={this.setHeadLine.bind(this)}/>} />
               </article>
             </main>

@@ -17,8 +17,8 @@ module.exports = {
     './styles/index.scss'
   ],
   output: {
-    publicPath: '/dist',
-    path: path.join(__dirname, 'dist'),
+    publicPath: '/docs',
+    path: path.join(__dirname, 'docs'),
     filename: 'bundle.js'
   },
   resolve: {
