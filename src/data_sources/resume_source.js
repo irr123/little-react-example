@@ -5,7 +5,7 @@ let resume_data = {
   "personal (simple)": {
     name: "Ivan",
     contact: "ivan@bogomolov.su",
-    location: "Russia, Novosibirsk"
+    location: "Russia, Moscow"
   },
   "skills (array with nested objects)": [
     {
@@ -22,7 +22,7 @@ let resume_data = {
     },
     {
       language: "PHP",
-      active: true,
+      active: false,
       frameworks: ["Native"],
       experience: `${((new Date()).getYear() - (new Date(2017,1,1)).getYear())}`,
     },
@@ -31,6 +31,12 @@ let resume_data = {
       active: true,
       frameworks: ["Native"],
       experience: `${((new Date()).getYear() - (new Date(2017,1,1)).getYear())}`,
+    },
+    {
+      language: "yaml",
+      active: true,
+      frameworks: ["🤪", "k8s", "ansible"],
+      experience: `${((new Date()).getYear() - (new Date(2018,1,1)).getYear())}`,
     },
   ],
   "experience (multi-level nested objects)": {
@@ -82,11 +88,11 @@ let resume_data = {
           achievements: [
             "None of the students were hurt 🌈"
           ],
-          responsibility: "Gave a three-month advanced python course"
+          responsibility: "Taught a 3 month advanced python course"
         },
       },
       "ArelloMobile, Pushwoosh later": {
-        current: true,
+        current: false,
         link: ["www.arello-mobile.com", "www.pushwoosh.com"],
         position: "developer, tech lead later",
         progress: {
@@ -104,6 +110,19 @@ let resume_data = {
           ],
           responsibility: "Arello was an outsoursing company and there I solved very different projects, there were little web sites, medium web sites, one very big site with many components-microservices, WebGL and VR projects, in addition to web development we did tracking and analytics systems, we had own documentation auto-generating toolkit, own CI solution over Jenkins + docker and many other interesting things. Once upon a time our SEO/owner decided that horisontal business scaling was not as effective as we can be and we switched to own product - Pushwoosh. At first it was a simple hightload platform for delivering push-notification, but later we adopted another platforms and changed our direction to marketing cross-channel communications platform with more emphasis to statiscics & analytics (see details on site)."
         },
+      },
+      "lamoda": {
+        current: true,
+        link: ["https://www.lamoda.ru"],
+        position: "dev, tech-lead",
+        progress: {
+          sell: {new: {architectural: {solutions: {}}}}
+          teach: {},
+          "???": {},
+          "...": [],
+          "PROFIT": "!"
+        },
+        responsibility: "Gave a new breath for tech side of loyalty program, maintenance customer communication service, incidents solver, and many other things",
       }
     }
   },
